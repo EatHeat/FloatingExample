@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Floating Example</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+
+</resources>
