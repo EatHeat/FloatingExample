@@ -14,13 +14,9 @@ import android.widget.ImageView;
 
 public class FlyBitch extends Service {
 
-	public static  int ID_NOTIFICATION = 2018;
 
 	private WindowManager windowManager;
 	private ImageView chatHead;
-
-	boolean mHasDoubleClicked = false;
-	long lastPressTime;
 
 	@Override
 	public IBinder onBind(Intent intent) {
@@ -64,9 +60,7 @@ public class FlyBitch extends Service {
 					case MotionEvent.ACTION_DOWN:
 
 						// Get current time in nano seconds.
-						long pressTime = System.currentTimeMillis();
 
-						lastPressTime = pressTime; 
 						initialX = paramsF.x;
 						initialY = paramsF.y;
 						initialTouchX = event.getRawX();
